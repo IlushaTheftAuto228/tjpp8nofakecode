@@ -1,7 +1,7 @@
 label start:
 if renpy.android:
     $ playera = renpy.input("Как вас зовут?", length=12, allow="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!#$%&*()_+-?,.\"' ")
-    $ playera = playera.strip().lower()
+    $ playera = playera.strip()
     "Вы уверены, что [playera] ваше имя?"
     menu:
         "Да":
